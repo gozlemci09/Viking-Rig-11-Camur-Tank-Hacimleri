@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 15px;
+    padding-bottom: 50px; /* Alt imzanın sayfa içeriğinin üstüne binmemesi için boşluk bırakıldı */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.tank-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.tank-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #2a2a2a;
+}
+
+.tank-item label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tank-item input {
+    width: 90px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #2a2a2a;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tank-item input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.calc-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.calc-btn:active {
+    background-color: #0056b3;
+}
+
+#sonuc-alani {
+    margin-top: 25px;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    display: none;
+    border: 1px solid #333;
+}
+
+#sonuc-alani h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.sonuc-satiri {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.toplam-hacim {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px dashed #444;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+    text-align: right;
+}
+
+/* Sol alta sabitlenen imza yazısı */
+.developer-credit {
+    position: fixed;
+    bottom: 10px;
+    left: 10px; 
+    font-size: 0.75rem;
+    color: #777777;
+    background-color: rgba(18, 18, 18, 0.7); /* İçeriğin üstünden geçerken yazının okunabilmesi için hafif koyu transparan arka plan */
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 1000;
+    pointer-events: none; /* Bu yazıya yanlışlıkla tıklanmasını engeller */
+}

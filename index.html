@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Viking Services-RIG 11 Çamur Tank Seviyeleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Viking Services-RIG 11 Çamur Tank Seviyeleri</h1>
+        <p class="subtitle">Üstten boşluk ölçümlerini (cm) giriniz</p>
+        
+        <div id="tank-container" class="tank-grid">
+            <!-- Tank inputları JS tarafından buraya yüklenecek -->
+        </div>
+
+        <button onclick="hesapla()" class="calc-btn">Hacimleri Hesapla</button>
+        
+        <div id="sonuc-alani">
+            <h2>Sonuçlar</h2>
+            <div id="sonuc-listesi"></div>
+            <div class="toplam-hacim" id="toplam-hacim"></div>
+        </div>
+    </div>
+
+    <!-- Sabit Geliştirici İmzası -->
+    <div class="developer-credit">Developed by Vahap Sevgili</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
